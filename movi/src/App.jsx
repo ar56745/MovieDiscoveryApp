@@ -4,6 +4,7 @@ import MovieCard from "./components/MovieCard";
 import { useState, useEffect } from 'react'
 import { useDebounce } from "react-use";
 import './App.css'
+import {updateSearchCount} from "./appwrite.js";
 
 
 const API_BASE_URL = 'https://api.themoviedb.org/3/discover/movie'   //tmdb API
@@ -48,6 +49,8 @@ const App = () => {
         return;
       }
       setMovieList(data.results || []);
+
+      updateSearchCount();
     }
     catch (error) {                                                                            //catch
       console.log(`Ran into an error while fetching movies: ${error}`);
