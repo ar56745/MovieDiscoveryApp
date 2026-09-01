@@ -3,6 +3,7 @@ const PROJECT_ID = import.meta.env.APPWRITE_API_KEY
 const DATABASE_ID = import.meta.env.APPWRITE_DATABASE_ID
 const COLLECTION_ID =
 
+
 const client = new Client()
     .setEndpoint('https://fra.cloud.appwrite.io/v1')
     .setProject(PROJECT_ID)
