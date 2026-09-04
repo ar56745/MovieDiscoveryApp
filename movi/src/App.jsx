@@ -6,7 +6,9 @@ import { useDebounce } from "react-use";
 import './App.css'
 import {updateSearchCount, getTrendingMovies} from "./appwrite.js";
 
-const API_BASE_URL = 'https://api.themoviedb.org/3'   //tmdb API
+const TABLE_ID = "metrics"  //
+
+const API_BASE_URL = 'https://api.themoviedb.org/3' //tmdb API
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY
 const API_METHODS = {
   method : 'GET',

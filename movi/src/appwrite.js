@@ -2,7 +2,7 @@ import {Client, TablesDB, ID, Query} from "appwrite";              //
 
 const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID
 const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID
-const TABLE_ID = "6a9278430027d34927ff"
+const TABLE_ID = "metrics"
 
 
 const client = new Client()
