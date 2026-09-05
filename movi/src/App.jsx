@@ -85,7 +85,11 @@ const App = () => {
 
   return (
       <main>
-        <div className="pattern"/>
+        <video className="background-video" autoPlay loop muted playsInline>
+          <source src="/background.mp4" type="video/mp4" />
+        </video>
+
+        <div className="video-overlay"/>
 
         <div className="wrapper">
           <header>
