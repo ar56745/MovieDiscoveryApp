@@ -85,7 +85,7 @@ const App = () => {
 
   return (
       <main>
-        <video className="background-video" autoPlay loop muted playsInline>
+        <video className="background-video" autoPlay loop muted playsInline>  //background
           <source src="/background.mp4" type="video/mp4" />
         </video>
 
