@@ -63,7 +63,7 @@ const App = () => {
     }
   }
 
-  useEffect(() => {                             //useEffect
+  useEffect(() => {                             //useEffect block
     fetchMovies(debouncedSearchTerm)
   }, [debouncedSearchTerm])
 
@@ -78,14 +78,14 @@ const App = () => {
   }
 
   useEffect(() => {
-    loadTrendingMovies();
+    loadTrendingMovies();                              //useEffect block
   }, []);
 
 
 
   return (
       <main>
-        <video className="background-video" autoPlay loop muted playsInline>  //background
+        <video className="background-video" autoPlay loop muted playsInline>
           <source src="/background.mp4" type="video/mp4" />
         </video>
 
