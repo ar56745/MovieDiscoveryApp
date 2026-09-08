@@ -55,7 +55,7 @@ const App = () => {
         await updateSearchCount(query, data.results[0]);
       }
     }
-    catch (error) {                                                                            //catch
+    catch (error) {                                                                 //catch
       console.log(`Ran into an error while fetching movies: ${error}`);
     }
     finally {
