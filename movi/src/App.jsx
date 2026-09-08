@@ -49,6 +49,7 @@ const App = () => {
       //   setMovieList([]);
       //   return;
       // }
+
       setMovieList(data.results || []);
 
       if(query && data.results.length > 0) {
