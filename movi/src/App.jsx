@@ -33,11 +33,11 @@ const App = () => {
     setLoading(true);
     setErrorMsg('');
 
-    try {
+    try {                                                                                         //try
       const endpoint = query
           ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`     // if a query exists
           : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;             // if it doesn't
-//try
+
       const response = await fetch(endpoint, API_METHODS);
       if(!response.ok) throw new Error('Failed to retrieve movie results.');
 
@@ -56,7 +56,7 @@ const App = () => {
         await updateSearchCount(query, data.results[0]);
       }
     }
-    catch (error) {                                                                 //catch
+    catch (error) {                                                                           //catch
       console.log(`Ran into an error while fetching movies: ${error}`);
     }
     finally {
