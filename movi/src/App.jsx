@@ -18,6 +18,7 @@ const API_METHODS = {
   }
 }
 
+
 const App = () => {
 
   const [searchTerm, setSearchTerm]= useState('');
@@ -67,6 +68,7 @@ const App = () => {
   useEffect(() => {                             //useEffect block
     fetchMovies(debouncedSearchTerm)
   }, [debouncedSearchTerm])
+
 
   const loadTrendingMovies = async () => {
     try {
