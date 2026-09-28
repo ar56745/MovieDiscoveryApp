@@ -19,6 +19,7 @@ const API_METHODS = {
 }
 
 
+
 const App = () => {
 
   const [searchTerm, setSearchTerm]= useState('');
